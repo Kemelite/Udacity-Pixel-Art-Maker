@@ -1,8 +1,8 @@
 // Select color input
-
+let color = $("#colorPicker"); 
 
 // Select size input
-const siz = document.getElementbyId('pixelCanvas');
+const size = document.getElementbyId('pixelCanvas');
 let fakh = $("#inputHeight");
 let fakw = $("#inputWidth");
 
@@ -13,27 +13,27 @@ $('#submit').click(function(e) {
 	makeGrid();
 });
 
-let color = $("#colorPicker"); 
+
 
 
 function makeGrid() {
 
-	siz.innerHTML = '';
+	size.innerHTML = '';
 	let height = fakh.val();
 	let width = fahw.val();
 
 
-	let addEvent = function(box) {
-		box.addEventListener('click', function() {
-			box.style.backgroundColor = color.val();
+	let addEvent = function(cell) {
+		cell.addEventListener('click', function() {
+			cell.style.backgroundColor = color.val();
 		});
 	}
 
 for (let j = 0; j < height; j++) {
-	let row = siz.insertRow(j);
+	let row = size.insertRow(j);
 	for (let m = 0; m < width; m++) {
-		let box = row.insertBox(m);
-	box.addEventListener('click', addEvent(box));
+		let cell = row.insertCell(m);
+	cell.addEventListener('click', addEvent(cell));
 	 }
   }
 // Your code goes here!
