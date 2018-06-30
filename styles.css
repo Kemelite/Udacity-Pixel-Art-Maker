@@ -1,4 +1,5 @@
 body {
+    background-color: #f9f9f2;
     text-align: center;
 }
 
@@ -11,6 +12,7 @@ h1 {
 
 h2 {
     margin: 1em 0 0.25em;
+    color: #0e5d86;
 }
 
 h2:first-of-type {
@@ -20,22 +22,25 @@ h2:first-of-type {
 table,
 tr,
 td {
-    border: 1px solid #0e5d86;
+    border: 2px solid #0e5d86;
 }
 
 table {
+    background-color: #f0f7fb;
     border-collapse: collapse;
     margin: 0 auto;
 }
 
 tr {
-    height: 20px;
+    height: 25px;
 }
 
 td {
-    width: 20px;
+    width: 25px;
 }
 
 input[type=number] {
     width: 6em;
+    border: 1px solid #0e5d86;
+    border-radius: 4px;
 }
