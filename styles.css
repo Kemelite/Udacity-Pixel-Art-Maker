@@ -6,6 +6,7 @@ h1 {
     font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
+    color: #0e5d86;
 }
 
 h2 {
@@ -19,7 +20,7 @@ h2:first-of-type {
 table,
 tr,
 td {
-    border: 1px solid black;
+    border: 1px solid #0e5d86;
 }
 
 table {
